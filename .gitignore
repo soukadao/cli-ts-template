@@ -1,0 +1,17 @@
+# IDE settings
+.idea
+.vscode
+
+# metadata files
+.DS_Store
+
+# environment files
+.env
+.env.*
+!.env.example
+
+# package dir
+node_modules/
+
+# output dir
+dist/
