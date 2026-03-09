@@ -1,8 +1,9 @@
 pre-commit:
   jobs:
-    - name: "format check"
-      run: bun run fmt:check {staged_files}
-    - name: "lint check"
+    - name: "code format"
+      run: bun run fmt {staged_files}
+      staged_files: true
+    - name: "lint fix"
       glob: "**/*.{ts}"
       run: bun run lint
     - name: "unit test"
